@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
-import SEO from '../components/seo';
+import Seo from '../components/seo';
 import Layout from '../components/Layout';
 import '../styles/articles.css';
 
@@ -36,9 +36,11 @@ export default function articlesTemplate({ pageContext, data }) {
     
     return (
         <Layout>
-            <SEO title="All Articles" />
+            <Seo title="All Articles" />
             <main className="home">
-                <GatsbyImage className='header-img' image={headerImage} alt="Header Image Waveform" />
+                <div className="header-wrap">
+                    <GatsbyImage className='header-img' image={headerImage} alt="Header Image Waveform" />
+                </div>
                 <section className="home-main">
                     <div className="all-articles">
                         <h1 className="articles-title">All Articles</h1>

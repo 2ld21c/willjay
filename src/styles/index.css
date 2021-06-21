@@ -11,11 +11,14 @@ body {
     margin: 10vh 20%;
     margin-bottom: 10vh;
 }
+.header-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 
 .header-img {
-    display: block;
     width: 55%;
-    margin: auto;
 }
 
 .home-main {

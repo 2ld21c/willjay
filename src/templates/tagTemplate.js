@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
-import SEO from '../components/seo';
+import Seo from '../components/seo';
 import Layout from '../components/Layout';
 import '../styles/tag.css';
 
@@ -33,9 +33,11 @@ export default function tagTemplate({pageContext, data}) {
 
     return (
         <Layout>
-            <SEO title={tag} />
+            <Seo title={tag} />
             <main className="home">
-                <GatsbyImage className='header-img' image={headerImage} alt="Header Image Waveform" />
+                <div className="header-wrap">
+                    <GatsbyImage className='header-img' image={headerImage} alt="Header Image Waveform" />
+                </div>
                 <section className="home-main">
                     <div className="tagged-articles">
                         <h1 className="tags-title">{tagHeader}</h1>
