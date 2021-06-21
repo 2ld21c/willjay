@@ -1,0 +1,31 @@
+.tagged-articles {
+    width: 60%;
+}
+
+.tags-title {
+    margin-bottom: 60px;
+}
+
+.tagged-article {
+    margin: 60px auto;
+}
+
+.tagged-article a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.article-title {
+    margin-bottom: 0;
+    font-weight: 900;
+}
+
+.tag-article-img {
+    width: 90px;
+    float: left;
+    margin-right: 10px;
+}
+
+.article-body {
+    margin-top: 0;
+}

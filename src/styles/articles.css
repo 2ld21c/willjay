@@ -1,0 +1,35 @@
+.all-articles {
+    width: 60%;
+}
+
+.articles-title {
+    margin-bottom: 60px;
+}
+
+.single-article {
+    margin: 60px auto;
+}
+.single-article a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.single-article-img {
+    width: 90px;
+    float: left;
+    margin-right: 10px;
+}
+
+.next-page {
+    float: right;
+    color: #C93709;
+}
+.prev-page {
+    float: left;
+    color: #C93709;
+}
+.next-page:hover {
+    text-decoration: underline;
+}
+.prev-page:hover {
+    text-decoration: underline;
+}
