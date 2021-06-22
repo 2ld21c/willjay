@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useStaticQuery, graphql } from 'gatsby';
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import Header from './Header';
 import Footer from './Footer';
 import '../styles/layout.css';
@@ -31,17 +32,17 @@ export default function Layout({children}) {
             <Header title={title} click={handleHamburgerClick} />
             <div className={dropdownClass}>
                 <ul className="dropdown_links">
-                    <li>
-                        <Link href="/">Home</Link>
+                    <li onClick={handleHamburgerClick}>
+                        <Link to="/">Home</Link>
                     </li>
                     <li>
-                        <Link href="/about">About</Link>
+                        <Link to="/about">About</Link>
                     </li>
                     <li>
-                        <Link href="/contact">Contact</Link>
+                        <Link to="/contact">Contact</Link>
                     </li>
                     <li>
-                        <Link href="/subscribe"><button className="sidebar-btn">Subscribe to Newsletter</button></Link>
+                        <Link to="/subscribe"><button className="sidebar-btn">Subscribe to Newsletter</button></Link>
                     </li>
                 </ul>
             </div>

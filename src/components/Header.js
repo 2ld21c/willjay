@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import TransitionLink from 'gatsby-plugin-transition-link';
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import '../styles/header.css';
 
 export default function Header({title, click}) {
@@ -16,7 +18,7 @@ export default function Header({title, click}) {
                         <Link to="/">Home</Link>
                     </li>
                     <li id="about-link" className="nav-link">
-                        <Link to="/about">About</Link>
+                        <AniLink paintDrip to="/about">About</AniLink>
                     </li>
                     <li id="about-link" className="nav-link">
                         <Link to="/contact">Contact</Link>
