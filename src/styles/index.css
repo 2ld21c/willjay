@@ -1,10 +1,9 @@
-/* *{ border: 1px solid red; } */
-
 body {
     font-family: Montserrat;
     width: 100%;
+    background-color: #000000;
     color: #ffffff;
-    overflow: auto;
+    /* overflow: auto; */
 }
 
 .home {
