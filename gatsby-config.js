@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
     siteMetadata: {
-        title: `WILLIAM JAY`,
+        title: `WILL JAY`,
         description: `Website of William Jay, writer, software developer, and educator`,
         author: `willjw3`
     },
